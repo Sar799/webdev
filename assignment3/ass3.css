@@ -1,0 +1,135 @@
+.Main{
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+    color: #ffffff;
+    background-color: #000000;
+    display: block;
+    text-align: center;
+}
+.Tasks{
+position: relative;
+left: 20%;
+font-size: normal;
+font-weight: 100;
+color: lightgray;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.t{
+   font-weight: bolder;
+   font-size: 50px;
+   color: white;
+ }
+ .btn {
+   cursor: pointer;
+ }
+ .flex-row,
+.flex-row-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.fafa {
+   position: absolute;
+    left:1200px
+  }
+#plus{
+    color: blue;
+}
+
+.noitems{
+    font-size: normal;
+    color: lightgray;
+    position: relative;
+    right: 19%;
+}
+.pmain{
+    margin: auto auto;
+    /* margin-top: 100px; */
+    width: 440px;
+    height: 220px;
+    border: 1px solid red;
+    border-radius: 12px;
+    background-color:white;
+    text-align: center;
+}
+.addnew{
+    color: red;
+   margin-top:50px;
+   font-size: 23px;
+    font-weight: 400;
+}
+.newitem{
+    border: 1px solid red;
+    border-radius: 4px;
+    height: 30px;
+  width:260px;
+  text-align: center;
+}
+.but{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 30px;
+    /* background-color: red; */
+    color: red;
+} /* width: 30px;*/
+.b1{
+    /* background-color: #e74c3c;
+    width: 50px;
+    border-radius: 10px;
+     */
+     color: white;
+    width: 80px;
+    height: 43px;
+    background: #e74c3c;
+    border-radius: 20px;
+    opacity: 1;
+    border: none;
+    visibility: visible;
+    margin-left: 100px;
+}
+.b2{
+    color: white;
+    width: 80px;
+    height: 43px;
+    background: #e74c3c;
+    border-radius: 20px;
+    opacity: 1;
+    border: none;
+    visibility: visible;
+    margin-right: 100px;
+}
+#blurr{
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+    color: #ffffff;
+    background-color: #000000;
+    display: block;
+    text-align: center;
+    filter: blur(20px);
+}
+.bl{
+    background-color: #000000;
+}
+.card {
+    margin-left: 7%;
+    margin-top: 1px;
+    border: 1px solid red;
+    border-radius: 12px;
+    width: 12%;
+    height: 250px;
+    font-weight: lighter;
+    box-shadow: 4px 4px 5px lightgrey;
+
+  }
+  .card-heading {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.7em;
+    color: #e74c3c;
+    margin-bottom: 0px;
+    position: relative;
+  }

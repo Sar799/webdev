@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JP102</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+        .print{
+            height: 300px;
+            width: 240px;
+        background-color:white;
+        }
+        .btn-back{
+            margin-top: 260px;
+            background-color:red;
+            width: 40px;
+            margin-left: 120px;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+
+        .btn-delete{
+            margin-top: 260px;
+            background-color:blue;
+            width: 40px;
+            margin-left: 20px;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+        .division{
+            display: flex;
+            justify-content: right;
+        }
+
+        #addid{
+            color: #ffffff;
+            font-size: 20px;
+
+        }
+        #item{
+            background-color: green;
+        }
+        .ppt{
+        margin-top: -250px;
+        }
+    </style>
+
+<script>
+ function fun1(){
+     var p=document.getElementById("punjab").value;
+    document.getElementById("box").style.display="none";
+        document.getElementById("pass").style.display="none";
+     document.getElementById("box1").style.opacity="1";
+   //  window.alert(p);
+     var y=document.createElement("div");
+     var z=document.createElement("ul");
+     z.style.color="red";
+     z.setAttribute("class","ppt");
+z.innerHTML=p;
+     y.setAttribute("class",'print');
+     y.innerHTML="<div class='division'><button class='btn-back'><i class='fa fa-trash'id='addid'></i></button><button class='btn-delete'><i class='fa fa-plus text-light'id='addid'></i></button></div>"
+     document.getElementById("listt").appendChild(y);
+document.getElementById("listt").appendChild(z);
+
+ }
+    
+
+
+</script>
+
+
+    <body style="background-color:black;">
+        <div style="opacity: 0.1;" id="box1">
+
+        <div style="margin-top: 60px; margin-left: 200px;">
+            <div style="font-weight: bolder; font-size: 50px; color: white;">Tasks </div>
+            <div style="position: absolute; top: 60px; left: 340px; font-weight: lighter; font-size: 50px; color: white;">List</div>
+            </div>
+
+            <div style="position: absolute; top: 170px; left: 200px; color: white; font-weight: lighter; font-size: 35px;" id="pass">No Items in the todo list</div>
+            <div style="position: absolute; top: 80px; margin-left: 950px;" class="text-danger">
+
+            <a href="./jp102.html"style="width: 35px; height: 35px; border-radius: 50%;" class="bg-primary text-center text-light" id="add">button
+            </a>
+            </div>
+            </div>
+
+<div class="card1">
+            <div style="color:	#FF4500; opacity: 1; margin-top: 100px; margin-left: 420px; margin-right: 500px; height: 250px; align-self: center;" class="card " id="box">
+            <div style="font-size: 30px; text-align: center; margin-top: 30px;">Add New List </div>
+            <input type="text" id="punjab" placeholder="Add New List" style="margin-top: 20px; margin-left: 70px; margin-right: 70px; height: 50px; border-color: black;">
+            <div style="background-color: grey; height: 80px; margin-top: 10px;">
+            <button type="button "style="background-color: #FF4500; margin-left: 130px; margin-right: 300px; margin-top: 20px; opacity: 0.8; color: white; font-size: 20px;"class="btn btn-danger rounded-pill" data-toggle="button" onclick="fun1()">Add</button>
+            <button type="button " style="background-color: #FF4500; margin-left: 200px; margin-right: 250px; margin-top: -80px; opacity: 0.8; font-size: 20px;"class="btn btn-danger rounded-pill" data-toggle="button">Close</button>    
+ </div>
+
+</div>
+</div>
+
+<ul id="listt" style="margin-top: 70px; height: 280p; margin-left: 50px;">
+</ul>
+</div>
+
+</div>
+
+<div id="mumbai" style="opacity: 0; display: flex; justify-content: flex-start;">
+    
+<div class="card" style="background-color: white; width: 200px; height: 290px; margin-left: 180px; margin-top: 50px;" id="pen">
+   <!-- <a href="./jp102.html" style="height:90px; width: 35px; margin-top: 250px; margin-left: 50px; border-radius: 50%;" class="bg-danger"><i class="fa fa-trash"></i></a>-->
+  
+  
+</div>
+
+<!--<div class="card" style="background-color: blue; height: 50px;" id="agra"></div>-->
+</body>
+</html>

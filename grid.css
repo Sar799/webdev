@@ -1,0 +1,17 @@
+.Container{
+    display: inline-grid;
+    grid-template-columns: 40px 50px 50px auto;
+   grid-row-gap: 25px;
+   grid-template-rows: 50px 50px 50px;
+   grid-column-gap: 20px;
+}
+.grid-item{
+    background-color: yellow;
+    border: 2px solid red;
+}
+.grid-item1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
